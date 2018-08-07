@@ -1,7 +1,7 @@
 name:
   hasql-cursor-transaction
 version:
-  0.6.3
+  0.7
 category:
   Hasql, Database, PostgreSQL, Streaming
 synopsis:
@@ -53,15 +53,15 @@ library
     Hasql.CursorTransaction
   build-depends:
     -- database:
-    hasql >= 0.19 && < 0.20 || >= 1 && < 2,
-    hasql-transaction >= 0.5 && < 0.6,
+    hasql,
+    hasql-transaction,
     -- data:
-    bytestring-tree-builder == 0.2.*,
-    bytestring >= 0.10 && < 0.11,
+    bytestring-tree-builder,
+    bytestring,
     -- control:
-    contravariant >= 1.3 && < 2,
-    contravariant-extras >= 0.3.3.1 && < 0.4,
-    transformers >= 0.4 && < 0.6,
+    contravariant,
+    contravariant-extras,
+    transformers,
     -- general:
-    base-prelude >= 1 && < 2,
-    base >= 4.6 && < 5
+    base-prelude,
+    base
